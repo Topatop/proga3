@@ -1,0 +1,18 @@
+{
+  "$type": "Lab3.services.TodoList, Lab3",
+  "Tasks": {
+    "$type": "System.Collections.Generic.List`1[[Lab3.entities.Task, Lab3]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Lab3.entities.Task, Lab3",
+        "Theme": "1",
+        "Description": "dsfsdfasfa",
+        "Deadline": "2022-03-12T00:00:00",
+        "Tags": {
+          "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "$values": []
+        }
+      }
+    ]
+  }
+}
