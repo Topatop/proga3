@@ -1,0 +1,42 @@
+{
+  "$type": "Lab4.services.TodoList, Lab4",
+  "Tasks": {
+    "$type": "System.Collections.Generic.List`1[[Lab4.entities.Task, Lab4]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Lab4.entities.Task, Lab4",
+        "Theme": "Theme1",
+        "Description": "Description1",
+        "Deadline": "2024-01-07T17:59:49.7929896+03:00",
+        "Tags": {
+          "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "$values": [
+            "Tag1"
+          ]
+        }
+      },
+      {
+        "$type": "Lab4.entities.Task, Lab4",
+        "Theme": "Theme2",
+        "Description": "Description2",
+        "Deadline": "2024-01-07T17:59:49.7929928+03:00",
+        "Tags": {
+          "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "$values": [
+            "Tag2"
+          ]
+        }
+      },
+      {
+        "$type": "Lab4.entities.Task, Lab4",
+        "Theme": "I don't have a tag",
+        "Description": "But I am happy nonetheless!",
+        "Deadline": "2024-09-02T00:00:00",
+        "Tags": {
+          "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "$values": []
+        }
+      }
+    ]
+  }
+}

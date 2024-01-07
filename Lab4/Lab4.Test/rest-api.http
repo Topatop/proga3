@@ -1,0 +1,44 @@
+### Возвращает все задачи
+GET http://localhost:8080/todo
+Accept: application/json
+
+### Возвращает все задачи, дедлайн которых ещё не наступил
+### Это моя интерпретация требования "вывод актуальных задач"
+GET http://localhost:8080/todo/urgent
+Accept: application/json
+
+### Возвращает как максимум `limit` задач, дедлайн которых ещё не наступил
+### Это моя интерпретация требования "вывод N актуальных задач"
+GET http://localhost:8080/todo/urgent?limit=1
+Accept: application/json
+
+### Ищет все задачи, у которых есть тэг со значением `tag`
+### Переиспользовал реализацию требования "поиск задач по тэгам"
+GET http://localhost:8080/todo/search?tag=New%20tag
+Accept: application/json
+
+### Пример ошибочного запроса: отсутствует параметр `tag`
+GET http://localhost:8080/todo/search
+Accept: application/json
+
+### Добавление новой задачи
+POST http://localhost:8080/todo
+Content-Type: application/json
+
+{
+  "theme": "New theme",
+  "description": "New description",
+  "deadline": "2022-09-01",
+  "tags": ["New tag"]
+}
+
+### Пример добавления новой задачи без поля `tags`
+### Это поле по умолчанию принимает значение []
+POST http://localhost:8080/todo
+Content-Type: application/json
+
+{
+  "theme": "I don't have a tag",
+  "description": "But I am happy nonetheless!",
+  "deadline": "2024-09-02"
+}

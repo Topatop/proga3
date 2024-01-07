@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TodoList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tasks>
+    <Task>
+      <Theme>Theme1</Theme>
+      <Description>Description1</Description>
+      <Deadline>2024-01-07T17:59:49.8444425+03:00</Deadline>
+      <Tags>
+        <string>Tag1</string>
+      </Tags>
+    </Task>
+    <Task>
+      <Theme>Theme2</Theme>
+      <Description>Description2</Description>
+      <Deadline>2024-01-07T17:59:49.8444452+03:00</Deadline>
+      <Tags>
+        <string>Tag2</string>
+      </Tags>
+    </Task>
+  </Tasks>
+</TodoList>
